@@ -85,17 +85,21 @@ turtle.exitonclick()
 # 	ang += a
 
 
-# diameter = 180
-# seat= 12
 
+# diameter = 180
+# seat = 12
+# gap = 100
+
+
+# pGap = diameter + gap
 # for i in range(5):
 # 	for k in range(5):
-# 		rect((3*i*100 + 0, 3*k*100 + 0), (3*i*100 + 40, 3*k*100 + 40))
-# 		circle((3*i*100 + 0,  3*k*100 + 0), diameter/2)
+# 		rect((i*pGap + 0, k*pGap + 0), (i*pGap + 40, k*pGap + 40))
+# 		circle((i*pGap + 0,  k*pGap + 0), diameter/2)
 # 		ang = 360/seat
 # 		a = 360/seat
 # 		for rad in range(seat):
-# 			x = (diameter/2+20)*cos(ang*pi/180)+3*i*100
-# 			y = (diameter/2+20)*sin(ang*pi/180)+3*k*100
+# 			x = (diameter/2+20)*cos(ang*pi/180)+i*pGap
+# 			y = (diameter/2+20)*sin(ang*pi/180)+k*pGap
 # 			rect((10, 10), (-10, -10), fill='#668000', transform='translate(%g, %g) rotate(%g, 0, 0)' % (x, y, ang))
 # 			ang += a
